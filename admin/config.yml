@@ -24,3 +24,16 @@ collections:
       - {label: "Outlet Name", name: "title", widget: "string"}
       - {label: "Outlet Logo", name: "logo", widget: "image"}
       - {label: "Website or Google Maps Link", name: "link", widget: "string"}
+  - name: "products"
+    label: "Products"
+    folder: "_products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Product Name", name: "title", widget: "string"}
+      - label: "Product Images"
+        name: "galleryImages"
+        widget: "list"
+        field:
+          - {label: "Image", name: "image", widget: "image"}
+      - {label: "Product Description", name: "body", widget: "markdown"}

@@ -8,6 +8,9 @@ collections:
   outlets:
     title: Outlets
     output: false
+  products:
+    title: Products
+    output: false
 url: https://www.papapawsome.com
 permalink: pretty
 exclude:
