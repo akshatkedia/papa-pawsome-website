@@ -15,3 +15,12 @@ collections:
       - {label: "Customer Name", name: "title", widget: "string"}
       - {label: "Customer Image", name: "image", widget: "image"}
       - {label: "Testimonial Text", name: "body", widget: "markdown"}
+  - name: "outlets"
+    label: "Outlets"
+    folder: "_outlets"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Outlet Name", name: "title", widget: "string"}
+      - {label: "Outlet Logo", name: "logo", widget: "image"}
+      - {label: "Website or Google Maps Link", name: "link", widget: "string"}

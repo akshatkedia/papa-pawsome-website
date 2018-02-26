@@ -5,6 +5,9 @@ collections:
   testimonials:
     title: Testimonials
     output: false
+  outlets:
+    title: Outlets
+    output: false
 url: https://www.papapawsome.com
 permalink: pretty
 exclude:
