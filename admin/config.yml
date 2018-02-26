@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  repo: akshatkedia/papa-pawsome-website
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "_testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Customer Name", name: "title", widget: "string"}
+      - {label: "Customer Image", name: "image", widget: "image"}
+      - {label: "Testimonial Text", name: "body", widget: "markdown"}

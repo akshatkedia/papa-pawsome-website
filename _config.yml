@@ -1,0 +1,22 @@
+---
+title: Papa Pawsome
+timezone: Asia/Kolkata
+collections:
+  testimonials:
+    title: Testimonials
+    output: false
+url: https://www.papapawsome.com
+permalink: pretty
+exclude:
+- Gruntfile.js
+- Gemfile
+- Gemfile.lock
+- package.json
+- README*
+- node_modules
+- ".gitignore"
+plugins:
+- jekyll-seo-tag
+sass:
+  sass_dir: styles/
+  style: compressed

@@ -1,0 +1,125 @@
+---
+layout: default
+---
+
+<section class="cover height-90 imagebg text-center" data-overlay="2" id="home">
+  <div class="background-image-holder" style="background-color: rgba(0, 0, 0, 0); background-position: initial; background-repeat: repeat; background-attachment: scroll; background-image: url(&quot;/images/landing.jpg&quot;); background-size: auto auto; background-origin: padding-box; background-clip: border-box; opacity: 1;">
+    <img alt="background" src="/images/landing.jpg">
+  </div>
+  <div class="container pos-vertical-center">
+    <div class="row">
+      <div class="col-md-8">
+        <h3>
+          Streamline your workflow with Stack.
+        </h3>
+        <a class="btn btn--primary type--uppercase" href="#">
+          <span class="btn__text">
+            View The Demos
+          </span>
+        </a>
+      </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
+
+<section class="switchable feature-large">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-md-6">
+        <img alt="Image" class="border--round box-shadow-wide" src="img/education-1.jpg">
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="mt--2">
+          <h2>Graphic Design</h2>
+          <p class="lead">
+            Launching an attractive and scalable website quickly and affordably is important for modern startups — Stack offers massive value without looking 'bargain-bin'.
+          </p>
+          <a href="#">Enquire Now »</a>
+        </div>
+      </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
+
+<section class="switchable feature-large">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-md-6 col-lg-5">
+        <div class="mt--2">
+          <h2>Graphic Design</h2>
+          <p class="lead">
+            Launching an attractive and scalable website quickly and affordably is important for modern startups — Stack offers massive value without looking 'bargain-bin'.
+          </p>
+          <a href="#">Enquire Now »</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img alt="Image" class="border--round box-shadow-wide" src="img/education-1.jpg">
+      </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="slider slider--inline-arrows" data-arrows="true" data-children="3">
+          <ul class="slides flickity-enabled is-draggable" tabindex="0">
+            <div class="flickity-viewport" style="height: 190.5px;">
+              <div class="flickity-slider" style="left: 0px; transform: translate3d(-199.93%, 0px, 0px);">
+                {% for testimonial in site.testimonials %}
+                <li>
+                  <div class="testimonial row justify-content-center">
+                    <div class="col-lg-2 col-md-4 col-6 text-center">
+                      <img class="testimonial__image" alt="Image" src="{{ testimonial.image }}">
+                    </div>
+                    <div class="col-lg-7 col-md-8 col-12">
+                      <span class="h3">“{{ testimonial.content }}”</span>
+                      <h5>{{ testimonial.title }}</h5>
+                      <span>Interface Designer — Yoke</span>
+                    </div>
+                  </div>
+                </li>
+                {% endfor %}
+              </div>
+            </div>
+            <button class="flickity-prev-next-button previous" type="button" aria-label="previous"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button>
+            <button class="flickity-prev-next-button next" type="button" aria-label="next"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
+
+<section class="text-center imagebg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1"><canvas id="granim-0" width="1425" height="469"></canvas>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-lg-6">
+        <div class="cta">
+          <h2>Purchase Stack now and get lifetime free content updates</h2>
+          <p class="lead">
+            Each purchase of Stack comes with six months free support — and a lifetime of free content and bug-fix updates.
+          </p>
+          <a class="btn btn--primary type--uppercase" href="https://themeforest.net/item/stack-multipurpose-html-with-page-builder/19337626?ref=medium_rare">
+                                    <span class="btn__text">
+                                        Purchase on Envato
+                                    </span>
+                                    <span class="label">$18 USD</span>
+                                </a>
+        </div>
+      </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
