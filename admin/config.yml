@@ -34,6 +34,6 @@ collections:
       - label: "Product Images"
         name: "galleryImages"
         widget: "list"
-        field:
+        fields:
           - {label: "Image", name: "image", widget: "image"}
       - {label: "Product Description", name: "body", widget: "markdown"}
