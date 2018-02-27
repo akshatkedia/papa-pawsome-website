@@ -1,7 +1,5 @@
 ---
 title: Woofy Fresh
-galleryImages:
-  - null
 ---
 Safe Pet Dental Care
 
