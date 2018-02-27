@@ -1,5 +1,7 @@
 ---
 title: Soft Paws
+galleryImages:
+  - image: /images/uploads/soft-paws.jpg
 ---
 Made with food grade ingredients such as Olive oil, beeswax, castor oil and flaxseed oil.
 
