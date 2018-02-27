@@ -1,1 +1,12 @@
-/*! Place your custom styles here */
+.outlet {
+  display: flex;
+  background-color: white;
+  height: 130px;
+  padding: 0 1rem;
+}
+
+.outlet img {
+  align-self: center;
+  margin: auto;
+  max-height: 105px;
+}

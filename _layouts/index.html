@@ -24,47 +24,42 @@ layout: default
   <!--end of container-->
 </section>
 
+{% for product in site.products %}
+{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 <section class="switchable feature-large">
   <div class="container">
-    <div class="row justify-content-around">
+    <div class="row justify-content-around align-items-center">
+      {% if thecycle == 'odd' %}
       <div class="col-md-6">
-        <img alt="Image" class="border--round box-shadow-wide" src="img/education-1.jpg">
+        <img alt="Image" class="border--round box-shadow-wide" src="{{ product.galleryImages[0].image }}">
       </div>
       <div class="col-md-6 col-lg-5">
         <div class="mt--2">
-          <h2>Graphic Design</h2>
+          <h2>{{ product.title }}</h2>
           <p class="lead">
-            Launching an attractive and scalable website quickly and affordably is important for modern startups — Stack offers massive value without looking 'bargain-bin'.
+            {{ product.content | remove: '<p>' | remove: '</p>' }}
           </p>
-          <a href="#">Enquire Now »</a>
         </div>
       </div>
+      {% else %}
+      <div class="col-md-6 col-lg-5">
+        <div class="mt--2">
+          <h2>{{ product.title }}</h2>
+          <p class="lead">
+            {{ product.content | remove: '<p>' | remove: '</p>' }}
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img alt="Image" class="border--round box-shadow-wide" src="{{ product.galleryImages[0].image }}">
+      </div>
+      {% endif %}
     </div>
     <!--end of row-->
   </div>
   <!--end of container-->
 </section>
-
-<section class="switchable feature-large">
-  <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-md-6 col-lg-5">
-        <div class="mt--2">
-          <h2>Graphic Design</h2>
-          <p class="lead">
-            Launching an attractive and scalable website quickly and affordably is important for modern startups — Stack offers massive value without looking 'bargain-bin'.
-          </p>
-          <a href="#">Enquire Now »</a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <img alt="Image" class="border--round box-shadow-wide" src="img/education-1.jpg">
-      </div>
-    </div>
-    <!--end of row-->
-  </div>
-  <!--end of container-->
-</section>
+{% endfor %}
 
 <section>
   <div class="container">
@@ -103,21 +98,26 @@ layout: default
 
 <section class="text-center imagebg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1"><canvas id="granim-0" width="1425" height="469"></canvas>
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-md-8 col-lg-6">
         <div class="cta">
           <h2>Purchase Stack now and get lifetime free content updates</h2>
           <p class="lead">
             Each purchase of Stack comes with six months free support — and a lifetime of free content and bug-fix updates.
           </p>
-          <a class="btn btn--primary type--uppercase" href="https://themeforest.net/item/stack-multipurpose-html-with-page-builder/19337626?ref=medium_rare">
-                                    <span class="btn__text">
-                                        Purchase on Envato
-                                    </span>
-                                    <span class="label">$18 USD</span>
-                                </a>
         </div>
       </div>
+    </div>
+    <div class="row justify-content-around align-items-center">
+      {% for outlet in site.outlets %}
+      <div class="col-sm-6 col-md-3 mb-4">
+        <a href="{{ outlet.link }}">
+          <div class="outlet border--round box-shadow-wide">
+            <img alt="{{ outlet.title }}" src="{{ outlet.logo }}">
+          </div>
+        </a>
+      </div>
+      {% endfor %}
     </div>
     <!--end of row-->
   </div>
