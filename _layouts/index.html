@@ -37,7 +37,7 @@ layout: default
         <div class="mt--2">
           <h2>{{ product.title }}</h2>
           <p class="lead">
-            {{ product.content | remove: '<p>' | remove: '</p>' }}
+            {{ product.content | strip_html }}
           </p>
         </div>
       </div>
@@ -46,7 +46,7 @@ layout: default
         <div class="mt--2">
           <h2>{{ product.title }}</h2>
           <p class="lead">
-            {{ product.content | remove: '<p>' | remove: '</p>' }}
+            {{ product.content | strip_html }}
           </p>
         </div>
       </div>
@@ -61,32 +61,28 @@ layout: default
 </section>
 {% endfor %}
 
-<section>
+<section class=" ">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="slider slider--inline-arrows" data-arrows="true" data-children="3">
-          <ul class="slides flickity-enabled is-draggable" tabindex="0">
-            <div class="flickity-viewport" style="height: 190.5px;">
-              <div class="flickity-slider" style="left: 0px; transform: translate3d(-199.93%, 0px, 0px);">
-                {% for testimonial in site.testimonials %}
-                <li>
-                  <div class="testimonial row justify-content-center">
-                    <div class="col-lg-2 col-md-4 col-6 text-center">
-                      <img class="testimonial__image" alt="Image" src="{{ testimonial.image }}">
-                    </div>
-                    <div class="col-lg-7 col-md-8 col-12">
-                      <span class="h3">“{{ testimonial.content }}”</span>
-                      <h5>{{ testimonial.title }}</h5>
-                      <span>Interface Designer — Yoke</span>
-                    </div>
-                  </div>
-                </li>
-                {% endfor %}
+        <div class="slider slider--inline-arrows" data-arrows="true">
+          <ul class="slides">
+            {% for testimonial in site.testimonials %}
+            <li>
+              <div class="testimonial row justify-content-center">
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                  <img class="testimonial__image" alt="Image" src="{{ testimonial.image }}" />
+                </div>
+                <div class="col-lg-7 col-md-8 col-12">
+                  <span class="h3">
+                    &ldquo;{{ testimonial.content | strip_html }}&rdquo;
+                  </span>
+                  <h5>{{ testimonial.title }}</h5>
+                  <span>Interface Designer &mdash; Yoke</span>
+                </div>
               </div>
-            </div>
-            <button class="flickity-prev-next-button previous" type="button" aria-label="previous"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button>
-            <button class="flickity-prev-next-button next" type="button" aria-label="next"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button>
+            </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -111,7 +107,7 @@ layout: default
     <div class="row justify-content-around align-items-center">
       {% for outlet in site.outlets %}
       <div class="col-sm-6 col-md-3 mb-4">
-        <a href="{{ outlet.link }}">
+        <a href="{{ outlet.link }}" target="_blank">
           <div class="outlet border--round box-shadow-wide">
             <img alt="{{ outlet.title }}" src="{{ outlet.logo }}">
           </div>
