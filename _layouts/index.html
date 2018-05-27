@@ -2,26 +2,29 @@
 layout: default
 ---
 
-<section class="cover height-90 imagebg text-center" data-overlay="2" id="home">
-  <div class="background-image-holder" style="background-color: rgba(0, 0, 0, 0); background-position: initial; background-repeat: repeat; background-attachment: scroll; background-image: url(&quot;/images/landing.jpg&quot;); background-size: auto auto; background-origin: padding-box; background-clip: border-box; opacity: 1;">
-    <img alt="background" src="/images/landing.jpg">
-  </div>
-  <div class="container pos-vertical-center">
-    <div class="row">
-      <div class="col-md-8">
-        <h3>
-          Streamline your workflow with Stack.
-        </h3>
-        <a class="btn btn--primary type--uppercase" href="#">
-          <span class="btn__text">
-            View The Demos
-          </span>
-        </a>
+<section class="cover height-70 imagebg text-center slider" data-arrows="true" data-paging="true" data-children="2">
+  <ul class="slides flickity-enabled is-draggable" tabindex="0">
+    <div class="flickity-viewport">
+      <div class="flickity-slider" style="left: 0px; transform: translateX(-100%);">
+        <li class="imagebg slide" style="position: absolute; left: 200%;">
+          <div class="background-image-holder" style="background-color: rgba(0, 0, 0, 0); background-position: initial; background-repeat: repeat; background-attachment: scroll; background-image: url(&quot;images/papa_pawsome_header_1.jpg&quot;); background-size: contain; background-origin: padding-box; background-clip: border-box; opacity: 1;">
+            <img alt="background" src="images/papa_pawsome_header_1.jpg">
+          </div>
+        </li>
+        <li class="imagebg slide" style="position: absolute; left: 100%;">
+          <div class="background-image-holder" style="background-color: rgba(0, 0, 0, 0); background-position: initial; background-repeat: repeat; background-attachment: scroll; background-image: url(&quot;images/papa_pawsome_header_2.jpg&quot;); background-size: contain; background-origin: padding-box; background-clip: border-box; opacity: 1;">
+            <img alt="background" src="images/papa_pawsome_header_2.jpg">
+          </div>
+        </li>
       </div>
     </div>
-    <!--end of row-->
-  </div>
-  <!--end of container-->
+    <button class="flickity-prev-next-button previous" type="button" aria-label="previous"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button><button class="flickity-prev-next-button next"
+      type="button" aria-label="next"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button>
+    <ol class="flickity-page-dots">
+      <li class="dot"></li>
+      <li class="dot is-selected"></li>
+    </ol>
+  </ul>
 </section>
 
 {% for product in site.products %}
@@ -61,7 +64,8 @@ layout: default
 </section>
 {% endfor %}
 
-<section class=" ">
+{% if site.testimonials[0]  %}
+<section>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -91,6 +95,7 @@ layout: default
   </div>
   <!--end of container-->
 </section>
+{% endif %}
 
 <section class="text-center imagebg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1"><canvas id="granim-0" width="1425" height="469"></canvas>
   <div class="container">

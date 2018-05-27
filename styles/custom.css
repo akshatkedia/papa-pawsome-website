@@ -1,3 +1,16 @@
+.bar {
+  padding-bottom: 0;
+}
+
+.bar .logo {
+  max-height: 4em;
+}
+
+.background-image-holder {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
 .outlet {
   display: flex;
   background-color: white;
