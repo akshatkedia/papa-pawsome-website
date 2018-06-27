@@ -28,11 +28,9 @@ layout: default
 </section>
 
 {% for product in site.products %}
-{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-<section class="switchable feature-large">
+<section class="feature-large">
   <div class="container">
     <div class="row justify-content-around align-items-center">
-      {% if thecycle == 'odd' %}
       <div class="col-md-6">
         <img alt="Image" class="border--round box-shadow-wide" src="{{ product.galleryImages[0].image }}">
       </div>
@@ -44,19 +42,6 @@ layout: default
           </p>
         </div>
       </div>
-      {% else %}
-      <div class="col-md-6 col-lg-5">
-        <div class="mt--2">
-          <h2>{{ product.title }}</h2>
-          <p class="lead">
-            {{ product.content | strip_html }}
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <img alt="Image" class="border--round box-shadow-wide" src="{{ product.galleryImages[0].image }}">
-      </div>
-      {% endif %}
     </div>
     <!--end of row-->
   </div>
@@ -102,10 +87,7 @@ layout: default
     <div class="row mb-5">
       <div class="col-md-8 col-lg-6">
         <div class="cta">
-          <h2>Purchase Stack now and get lifetime free content updates</h2>
-          <p class="lead">
-            Each purchase of Stack comes with six months free support — and a lifetime of free content and bug-fix updates.
-          </p>
+          <h2>Available at</h2>
         </div>
       </div>
     </div>
