@@ -23,3 +23,10 @@
   margin: auto;
   max-height: 105px;
 }
+
+/* Blog post */
+.article__body img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
