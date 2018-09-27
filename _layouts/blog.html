@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+<section class="space--sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="masonry masonry-blog-magazine">
+                    <div class="masonry-filter-container d-flex align-items-center">
+                        <span>Category:</span>
+                        <div class="masonry-filter-holder">
+                            <div class="masonry__filters" data-filter-all-text="All Categories"></div>
+                        </div>
+                    </div>
+                    <div class="masonry__container row">
+                        <div class="masonry__item col-md-6"></div>
+                        {% for post in site.posts %}
+                          {% if forloop.index == 4 %}
+                            <div class="masonry__item col-md-12 col-12">
+                                <div class="boxed boxed--lg boxed--border bg--secondary text-center masonry__promo">
+                                    <div class="pos-vertical-center">
+                                        <h3>Valuable business insight delivered direct to your inbox</h3>
+                                        <p>Join over 20,000 other designers</p>
+                                        <form action="//mrare.us8.list-manage.com/subscribe/post?u=77142ece814d3cff52058a51f&amp;id=f300c9cce8" data-success="Thanks for signing up.  Please check your inbox for a confirmation email." data-error="Please provide your email address and agree to the terms.">
+                                            <input class="validate-required validate-email" type="email" name="EMAIL" placeholder="Email Address" />
+                                            <button type="submit" class="btn btn--primary type--uppercase">Subscribe</button>
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                <input type="text" name="b_77142ece814d3cff52058a51f_f300c9cce8" tabindex="-1" value="">
+                                            </div>
+                                        </form>
+                                        <span class="type--fine-print">I have read and agreed to the
+                                            <a href="#">Terms &amp; Conditions</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end item-->
+                          {% endif %}
+                          {% if post.featured_image.type == 'full' %}
+                            <div class="masonry__item col-md-12 col-12 h" data-masonry-filter="Marketing">
+                                <a class="block" href="#">
+                                    <article class="imagebg border--round" data-scrim-bottom="8">
+                                        <div class="background-image-holder">
+                                            <img alt="background" src="{{ post.featured_image.image }}" />
+                                        </div>
+                                        <div class="article__title">
+                                            <span>{{ post.date | date_to_string }}</span>
+                                            <h4>{{ post.title }}</h4>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                            <!--end item-->
+                          {% elsif post.featured_image.type == 'half' %}
+                            <div class="masonry__item col-md-6 col-12" data-masonry-filter="Marketing">
+                                <a class="block" href="#">
+                                    <article class="imagebg border--round" data-scrim-bottom="8">
+                                        <div class="background-image-holder">
+                                            <img alt="background" src="{{ post.featured_image.image }}" />
+                                        </div>
+                                        <div class="article__title">
+                                            <span>{{ post.date | date_to_string }}</span>
+                                            <h4>{{ post.title }}</h4>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                            <!--end item-->
+                          {% else %}
+                            <div class="masonry__item col-md-12 col-lg-6 col-12" data-masonry-filter="Inspiration">
+                                <a class="block" href="#">
+                                    <article class="imagebg border--round height--tall" data-scrim-bottom="8">
+                                        <div class="background-image-holder">
+                                            <img alt="background" src="{{ post.featured_image.image }}" />
+                                        </div>
+                                        <div class="article__title">
+                                            <span>{{ post.date | date_to_string }}</span>
+                                            <h4>{{ post.title }}</h4>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                            <!--end item-->
+                          {% endif %}
+                        {% endfor %}
+                    </div>
+                    <!--end masonry container-->
+                </div>
+                <!--end masonry-->
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>

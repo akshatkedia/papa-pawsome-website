@@ -11,6 +11,15 @@ collections:
   products:
     title: Products
     output: false
+  posts:
+    permalink: "/blog/:title/"
+    output: true
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
 url: https://www.papapawsome.com
 permalink: pretty
 exclude:

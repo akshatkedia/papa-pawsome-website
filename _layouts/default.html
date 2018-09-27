@@ -19,29 +19,7 @@
   </head>
   <body>
     <a id="start"></a>
-    <div class="nav-container">
-      <nav id="menu2" class="bar hidden-xs ">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 text-center text-left-sm hidden-xs order-lg-2">
-              <div class="bar__module">
-                <a href="/">
-                                        <img class="logo logo-dark" alt="logo" src="images/papa_pawsome_logo.png">
-                                        <img class="logo logo-light" alt="logo" src="images/papa_pawsome_logo.png">
-                                    </a>
-              </div>
-              <!--end module-->
-            </div>
-            <div class="col-lg-5 order-lg-1">
-            </div>
-            <div class="col-lg-5 text-right text-left-xs text-left-sm order-lg-3">
-            </div>
-          </div>
-          <!--end of row-->
-        </div>
-        <!--end of container-->
-      </nav>
-    </div>
+    {% include header.html %}
     <div class="main-container">
       {{ content }}
     </div>
