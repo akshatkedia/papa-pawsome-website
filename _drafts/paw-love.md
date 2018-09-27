@@ -17,4 +17,4 @@ To keep healthy paws
 
 3\. Up and Down the rocky mountains- Just as we need to build up to a new exercise regimen, so do our dogs. Do not take them for a long walk across rocky terrain with carpet soft paws. Think walking barefoot across sharp rocks.
 
-Use these beautiful tips to help keep your babies safe and healthy 
+Use these beautiful tips to help keep your babies safe and healthy. 
