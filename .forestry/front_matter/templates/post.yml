@@ -7,3 +7,5 @@ fields:
   name: featured_image
   label: Featured image
   template: magazine-style-featured-image
+pages:
+- _posts/test.md
