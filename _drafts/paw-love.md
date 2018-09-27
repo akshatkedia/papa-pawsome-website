@@ -3,7 +3,7 @@ title: Paw Love
 date: 2018-09-27 14:17:19 +0000
 featured_image:
   image: "/uploads/Living_hand_to_paw copy.jpg"
-  type: full
+  type: half
 
 ---
 

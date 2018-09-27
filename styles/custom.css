@@ -7,8 +7,12 @@
 }
 
 .background-image-holder {
-  background-size: contain !important;
   background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.index .background-image-holder {
+  background-size: contain !important;
 }
 
 .outlet {

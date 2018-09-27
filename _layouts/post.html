@@ -9,10 +9,7 @@ layout: default
                 <article>
                     <div class="article__title text-center">
                         <h1 class="h2">{{ page.title }}</h1>
-                        <span>{{ page.date | date_to_string }} in </span>
-                        <span>
-                            <a href="#">{{ page.category }}</a>
-                        </span>
+                        <span>{{ page.date | date_to_string }}</span>
                     </div>
                     <!--end article title-->
                     <div class="article__body">
@@ -20,13 +17,13 @@ layout: default
                         {{ page.content }}
                     </div>
                     <div class="article__share text-center">
-                        <a class="btn bg--facebook btn--icon" href="#">
+                        <a class="btn bg--facebook btn--icon" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}">
                             <span class="btn__text">
                                 <i class="socicon socicon-facebook"></i>
                                 Share on Facebook
                             </span>
                         </a>
-                        <a class="btn bg--twitter btn--icon" href="#">
+                        <a class="btn bg--twitter btn--icon" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}">
                             <span class="btn__text">
                                 <i class="socicon socicon-twitter"></i>
                                 Share on Twitter
@@ -50,17 +47,19 @@ layout: default
                     <h5>Join over 20,000 satisfied customers</h5>
                     <div class="row justify-content-center">
                         <div class="col-md-8 text-left">
-                            <form>
-                                <input type="text" name="name" placeholder="Your Name" />
-                                <input type="email" name="email" placeholder="Email Address" />
-                                <div class="input-checkbox">
-                                    <input type="checkbox" name="agree" />
-                                    <label></label>
-                                </div>
-                                <span>I have read and agree to the
-                                    <a href="#">terms and conditions</a>
-                                </span>
+                            <form action="https://papa-pawsome.us19.list-manage.com/subscribe/post?u=9e4e97abfc5dbf71504b6672b&amp;id=2ba731d42f"
+                              data-success="Thanks for signing up. Please check your inbox for a confirmation email."
+                              data-error="Please provide your name and email address.">
+                                <input type="text" name="FNAME" placeholder="Your First Name"
+                                  class="validate-required" />
+                                <input type="text" name="LNAME" placeholder="Your Last Name"
+                                  class="validate-required" />
+                                <input type="email" name="EMAIL" placeholder="Email Address"
+                                  class="validate-required validate-email" />
                                 <button type="submit" class="btn btn--primary type--uppercase">Subscribe To Newsletter</button>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_77142ece814d3cff52058a51f_f300c9cce8" tabindex="-1" value="">
+                                </div>
                             </form>
                         </div>
                     </div>
