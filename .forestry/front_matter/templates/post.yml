@@ -2,4 +2,8 @@
 label: Post
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: include
+  name: featured_image
+  label: Featured image
+  template: magazine-style-featured-image
