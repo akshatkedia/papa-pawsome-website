@@ -9,7 +9,7 @@ featured_image:
 ### Paw Love 
 
 Unlike us, our pets don't need smartwatches to track their steps. However, they do need nourishment to their skin, paws and other sensitive areas. Much like us, our furry babies, get cracked heels and rough paws which sometime may bleed or worse even get infected!  
-To keep healthy paws 
+To keep healthy paws :
 
 1\. Just like we wash our hands and legs after entering our humble abode, clean your pooch's paws, so that foreign objects like broken glass or pebbles or even ticks and fleas stuck between their toes will be removed and any immediate attention can be given if serious object like glass is stuck.
 
