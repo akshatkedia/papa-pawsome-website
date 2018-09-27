@@ -1,0 +1,23 @@
+---
+label: Magazine style featured image
+hide_body: false
+is_partial: true
+display_field: featured_image
+fields:
+- type: field_group
+  name: featured_image
+  label: Featured image
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: select
+    config:
+      source:
+        type: simple
+      options:
+      - full
+      - half
+      - tall
+    label: Type
+    name: type
