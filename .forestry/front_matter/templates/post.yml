@@ -7,5 +7,3 @@ fields:
   name: featured_image
   label: Featured image
   template: magazine-style-featured-image
-pages:
-- _posts/paw-care.md
