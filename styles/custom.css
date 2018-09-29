@@ -1,18 +1,29 @@
-.bar {
-  padding-bottom: 0;
-}
-
 .bar .logo {
   max-height: 4em;
+  top: 0;
+}
+
+.bar .menu-horizontal {
+  top: 0;
+}
+
+.bar-1 .menu-horizontal > li > a {
+  font-size: 1em;
+}
+
+@media all and (max-width: 767px) {
+  .bar__module {
+    margin-bottom: 0;
+  }
+
+  .bar-1 .menu-horizontal {
+    padding-right: 0.7em;
+  }
 }
 
 .background-image-holder {
   background-repeat: no-repeat !important;
   background-size: cover !important;
-}
-
-.index .background-image-holder {
-  background-size: contain !important;
 }
 
 .outlet {
