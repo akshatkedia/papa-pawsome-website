@@ -42,6 +42,7 @@ exclude:
 - ".gitignore"
 plugins:
 - jekyll-seo-tag
+- jekyll-sitemap
 sass:
   sass_dir: styles/
   style: compressed
