@@ -1,5 +1,7 @@
 ---
 title: Papa Pawsome
+description: Ultra Pet care Products! Natural Paw Cream coz Cracked Paws Hurt! 🐾 Mint & Basil extracts Mouth Freshner coz even we don't like bad mouth odour! 🐕
+logo: /images/papa_pawsome_logo.png
 timezone: Asia/Kolkata
 collections:
   testimonials:
@@ -25,6 +27,11 @@ defaults:
     layout: post
 url: https://www.papapawsome.com
 permalink: pretty
+social:
+  links:
+    - https://www.instagram.com/papapawsome/
+    - https://www.facebook.com/papapawsome
+google_site_verification: B6Q_EJrJgXsoJGJOqzhJLK7QcMwpOt9JhYzB4FVIeKQ
 exclude:
 - Gruntfile.js
 - Gemfile
