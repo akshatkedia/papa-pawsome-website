@@ -84,49 +84,46 @@ layout: default
 </section>
 {% endif %}
 
-{% assign posts_count = site.posts | size %}
-{% unless posts_count < 3 %}
-  <section>
-      <div class="container">
-          <div class="row heading-block">
-              <div class="col-md-12 text-center">
-                  <h6 class="type--uppercase">Recent Stories</h6>
-              </div>
-          </div>
-          <!--end of row-->
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="masonry">
-                      <div class="masonry__container row">
-                          <div class="masonry__item col-lg-4 col-md-6"></div>
-                            {% for post in site.posts limit:3 %}
-                              <div class="masonry__item col-lg-4 col-md-6">
-                                  <article class="feature feature-1">
-                                      <a href="{{ post.url }}" class="block">
-                                          <img alt="Image" src="{{ post.featured_image.image }}" />
-                                      </a>
-                                      <div class="feature__body boxed boxed--border">
-                                          <span>{{ post.date | date_to_string }}</span>
-                                          <h5>{{ post.title }}</h5>
-                                          <a href="{{ post.url }}">
-                                              Read More
-                                          </a>
-                                      </div>
-                                  </article>
-                              </div>
-                              <!--end item-->
-                            {% endfor %}
-                      </div>
-                      <!--end of masonry container-->
-                  </div>
-                  <!--end masonry-->
-              </div>
-          </div>
-          <!--end of row-->
-      </div>
-      <!--end of container-->
-  </section>
-{% endunless %}
+<section>
+    <div class="container">
+        <div class="row heading-block">
+            <div class="col-md-12 text-center">
+                <h6 class="type--uppercase">Recent Stories</h6>
+            </div>
+        </div>
+        <!--end of row-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="masonry">
+                    <div class="masonry__container row">
+                        <div class="masonry__item col-lg-4 col-md-6"></div>
+                          {% for post in site.posts limit:3 %}
+                            <div class="masonry__item col-lg-4 col-md-6">
+                                <article class="feature feature-1">
+                                    <a href="{{ post.url }}" class="block">
+                                        <img alt="Image" src="{{ post.featured_image.image }}" />
+                                    </a>
+                                    <div class="feature__body boxed boxed--border">
+                                        <span>{{ post.date | date_to_string }}</span>
+                                        <h5>{{ post.title }}</h5>
+                                        <a href="{{ post.url }}">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!--end item-->
+                          {% endfor %}
+                    </div>
+                    <!--end of masonry container-->
+                </div>
+                <!--end masonry-->
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
 
 <section id="available-at" class="text-center imagebg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1"><canvas id="granim-0" width="1425" height="469"></canvas>
   <div class="container">
