@@ -25,12 +25,12 @@ defaults:
     type: posts
   values:
     layout: post
-url: https://www.papapawsome.com
+url: https://www.papa-pawsome.com
 permalink: pretty
 social:
   links:
     - https://www.instagram.com/papapawsome/
-    - https://www.facebook.com/papapawsome
+    - https://www.facebook.com/papapawsome/
 google_site_verification: B6Q_EJrJgXsoJGJOqzhJLK7QcMwpOt9JhYzB4FVIeKQ
 exclude:
 - Gruntfile.js
