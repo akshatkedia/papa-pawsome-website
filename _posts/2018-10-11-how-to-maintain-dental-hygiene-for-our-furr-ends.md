@@ -3,7 +3,7 @@ title: How to maintain dental hygiene for our furr-ends?
 date: 2018-10-11 06:06:45 +0000
 featured_image:
   image: "/uploads/Thursday.jpg"
-  type: ''
+  type: full
 
 ---
 Dental hygiene is very important in dogs because if not clean, other than bad breath, it can cause a build up of plaque and tartar which not only causes dental diseases, but of other organs too. So maintaining a good dental hygiene prevents your dog from many diseases of kidney or liver as well. Some dental issues that arise are, tooth decaying, gum disease called gingivitis which makes the gums bleed because of plaque build-up, tooth ache, etc.
