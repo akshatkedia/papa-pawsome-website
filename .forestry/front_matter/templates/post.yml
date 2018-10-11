@@ -3,10 +3,12 @@ label: Post
 hide_body: false
 is_partial: false
 fields:
-- type: include
-  name: featured_image
-  label: Featured image
-  template: magazine-style-featured-image
+- type: text
+  name: title
+  label: Title
+- type: file
+  name: image
+  label: Image
 pages:
-- _posts/2018-09-27-paw-care.md
 - _posts/2018-10-11-how-to-maintain-dental-hygiene-for-our-furr-ends.md
+- _posts/2018-09-27-paw-care.md
