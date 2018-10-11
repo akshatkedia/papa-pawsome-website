@@ -22,59 +22,28 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="masonry masonry-blog-magazine">
+                <div class="masonry">
                     <div class="masonry__container row">
-                        <div class="masonry__item col-md-6"></div>
+                        <div class="masonry__item col-lg-4 col-md-6"></div>
                         {% for post in site.posts %}
-                          {% if post.featured_image.type == 'full' %}
-                            <div class="masonry__item col-md-12 col-12 h">
-                                <a class="block" href="{{ post.url }}">
-                                    <article class="imagebg border--round" data-scrim-bottom="8">
-                                        <div class="background-image-holder">
-                                            <img alt="background" src="{{ post.featured_image.image }}" />
-                                        </div>
-                                        <div class="article__title">
-                                            <span>{{ post.date | date_to_string }}</span>
-                                            <h4>{{ post.title }}</h4>
-                                        </div>
-                                    </article>
-                                </a>
+                            <div class="masonry__item col-lg-4 col-md-6">
+                                <article class="feature feature-1">
+                                    <a href="{{ post.url }}" class="block">
+                                        <img alt="Image" src="{{ post.featured_image.image }}" />
+                                    </a>
+                                    <div class="feature__body boxed boxed--border">
+                                        <span>{{ post.date | date_to_string }}</span>
+                                        <h5>{{ post.title }}</h5>
+                                        <a href="{{ post.url }}">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </article>
                             </div>
                             <!--end item-->
-                          {% elsif post.featured_image.type == 'half' %}
-                            <div class="masonry__item col-md-6 col-12">
-                                <a class="block" href="{{ post.url }}">
-                                    <article class="imagebg border--round" data-scrim-bottom="8">
-                                        <div class="background-image-holder">
-                                            <img alt="background" src="{{ post.featured_image.image }}" />
-                                        </div>
-                                        <div class="article__title">
-                                            <span>{{ post.date | date_to_string }}</span>
-                                            <h4>{{ post.title }}</h4>
-                                        </div>
-                                    </article>
-                                </a>
-                            </div>
-                            <!--end item-->
-                          {% else %}
-                            <div class="masonry__item col-md-12 col-lg-6 col-12">
-                                <a class="block" href="{{ post.url }}">
-                                    <article class="imagebg border--round height--tall" data-scrim-bottom="8">
-                                        <div class="background-image-holder">
-                                            <img alt="background" src="{{ post.featured_image.image }}" />
-                                        </div>
-                                        <div class="article__title">
-                                            <span>{{ post.date | date_to_string }}</span>
-                                            <h4>{{ post.title }}</h4>
-                                        </div>
-                                    </article>
-                                </a>
-                            </div>
-                            <!--end item-->
-                          {% endif %}
                         {% endfor %}
                     </div>
-                    <!--end masonry container-->
+                    <!--end of masonry container-->
                 </div>
                 <!--end masonry-->
             </div>
