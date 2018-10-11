@@ -8,4 +8,5 @@ fields:
   label: Featured image
   template: magazine-style-featured-image
 pages:
+- _posts/how-to-maintain-dental-hygiene-for-our-furr-ends.md
 - _posts/2018-09-27-paw-love.md
