@@ -1,7 +1,7 @@
 ---
 title: 'Measures for your pooch''s healthy skin and fur. '
 date: 2018-10-14 07:59:20 +0000
-image: "/uploads/Sunday.jpg"
+image: "/uploads/Sunday-1.jpg"
 
 ---
 Maintaining your dog’s skin and coat healthy is an important task of pet parenting and important for your dog’s health as well. Apart from choosing the right products, we have to keep in mind other things too, such as –
